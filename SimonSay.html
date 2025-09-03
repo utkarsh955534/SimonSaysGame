@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        border: 5px solid black;
+        margin: 2rem;
+      }
+      .pink {
+        background-color: rgb(218, 89, 110);
+      }
+      .orange {
+        background-color: rgb(204, 160, 78);
+      }
+      .green {
+        background-color: rgb(95, 215, 215);
+      }
+      .blue {
+        background-color: rgb(44, 152, 168);
+      }
+      .flash {
+        background-color: white;
+      }
+      .userFlash{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simon Says game</h1>
+    <h2>Press any key to start</h2>
+    <div class="btn-container">
+      <div class="line-one">
+        <div class="btn pink" id="pink"></div>
+        <div class="btn orange" id="orange"></div>
+      </div>
+      <div class="line-two">
+        <div class="btn green" id="green"></div>
+        <div class="btn blue" id="blue"></div>
+      </div>
+    </div>
+    <script src="SimonSay.js"></script>
+  </body>
+</html>
